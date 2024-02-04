@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {//im not really sure w
     else{
       questionContainer.innerHTML = "You got " + score + " out of " + questions.length + " questions correct!";
       answerBtn.classList.add("hidden");
+      prevBtn.classList.add("hidden");
       nextBtn.innerHTML = "Restart";
       nextBtn.removeEventListener("click", showNextQuestion);
       nextBtn.addEventListener("click", startQuiz);
